@@ -1,7 +1,6 @@
 package greatLearning.Problem1;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.Stack;
 
 public class Solution1 {
 
@@ -14,7 +13,7 @@ public class Solution1 {
     }
 
     private boolean CheckBrackets(String agr) {
-        Deque<Character> stack = new ArrayDeque<>();
+        Stack<Character> stack = new Stack<Character>();
         for (int i = 0; i < agr.length(); i++) {
             char ch = agr.charAt(i);
             if(ch==' '){
